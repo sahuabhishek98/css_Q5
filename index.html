@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day_5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>CSS INTERVIEW Q&A</h1>
+         <br>
+        <b>1.Show implementation of transition.</b>
+
+        <p> 
+            The transition-property specifies the CSS properties to which you want 
+            the transition effect. Only these CSS properties are animated.
+        </p><br><br>
+        <div class="box-tra"></div>
+<br><br>
+<!-- ############################################################## -->
+<b>2.Show implementation of transformation.</b>
+<br>
+<p>CSS transforms are a collection of functions that allow to shape 
+    elements in particular ways:</p>
+    <br>
+    <ul>
+        <li><mark>translate:</mark> moves the element along up to 3 axis (x, y and z)</li>
+        <li><mark>rotate:</mark> moves the element around a central point</li>
+        <li><mark>scale:</mark> resizes the element</li>
+        <li><mark>skew:</mark> distorts the element</li>
+    </ul>
+  <div class="box1">This div element is moved 70 pixels to the right, and 100 pixels down from its current position.</div>
+  <div class="box2">rotate(50deg)</div>
+  <div class="box3">scale(1.5)</div>
+  <div class="box4">skew(20deg)</div>
+<br><br>
+<!-- ######################################################################### -->
+<b>3.Show implementation of grid.</b>
+<br><br>
+<div class="grid-con">
+    <div class="grid-item1">Item_1</div>
+    <div class="grid-item2">Item_2</div>
+    <div class="grid-item3">Item_3</div>
+    <div class="grid-item4">Item_4</div>
+    <div class="grid-item5">Item_5</div>
+    <div class="grid-item6">Item_6</div>
+    <div class="grid-item7">Item_7</div>
+    <div class="grid-item8">Item_8</div>
+    <div class="grid-item1">Item_1</div>
+    <div class="grid-item2">Item_2</div>
+   
+    
+</div>
+<!--################################################################-->
+<br><br>
+<b>4.What are CSS combinators. </b>
+<br>
+<p>Combinators combine the selectors to provide them a useful relationship and the position of content in the document. This comes in handy when you want to style certain elements all at once rather than styling elements individually. CSS combinator selectors are as follows.
+</p>
+<ol>
+    <li>Descendant Selector (space)</li>
+    <li>Child Selector (>)</li>
+    <li>Adjacent Sibling Selector (+)</li>
+    <li>General Sibling Selector (~)</li>
+</ol>
+<br>
+
+<h3 style="color:blue">Descendant Selector : </h3> 
+<p>The descendant selector matches all elements that are descendants of a specified element.
+</p>
+<div class="box_a">
+    <h4>This is descemdant</h4>
+    <h5>This is des1</h5>
+</div>
+<div class="box_a">
+    <h4>This is descemdant_1</h4>
+    <h6>This is des2</h6>
+</div>
+
+<br><br>
+<h3 style="color:blue">Child Selector : </h3> 
+<p>The child selector will only affect elements under a direct parent. A good way to remember this is that a child will only listen to its direct parents.
+</p>
+<br>
+<div class="parent">
+   
+        <h5>This heading is a direct child of the parent tag.</h5>
+        <h4>So is this heading tag.</h4>
+        <button>
+            <h4>This heading tag is NOT a direct child of the first parent</h4>
+        </button>
+        <h4>This heading tag is also a child of the parent tag</h4>
+    
+
+</div>
+<br><br>
+<h3 style="color:blue">Adjacent Sibling Selector :</h3> 
+<br>
+<p>   To use the adjacent sibling selector in your CSS stylesheet, you simply need
+     the plus (+) sign. The adjacent sibling selector is used to select an element
+      that is directly after another specific element.
+</p>
+<h4>this is h4_1
+    <p>this is p1</p>
+</h4>
+<h5>this is h5_1</h5>
+<h4>this is h4_2</h4>
+<h5>this is h5_2</h5>
+
+
+
+
+<h3 style="color:blue">General Sibling Selectors :</h3>
+<br>
+<p>The general sibling selector follows through on all elements under the targeted HTML
+     element selected. This means that if another element tag interrupts the direct adjacent
+      flow, the style rules can still follow through.
+</p>
+<br>
+
+<h3>I am heading tag!</h3>
+<h5>I am head5 tag 1.</h5>
+<button>
+    <h5>I am a head5 tag inside a button!</h5>
+</button>
+<h5>I am head5 tag 2.</h5>
+<h5>I am head5 tag 3.</h5>
+<h4>I am another head5 tag!</h4>
+<button>
+    <h5>I am a head5 tag inside a button!</h5>
+</button>
+<h5>I am head5 tag 4.</h5>
+
+
+<!--################################################################-->
+<br><br>
+<b>5.What are pseudo selectors in CSS. </b>
+<br>
+<p>CSS pseudo-classes are used to add styles to selectors, but only when those selectors meet certain conditions. A pseudo class is expressed by adding a colon (:) after a selector in CSS, followed by a pseudo-class such as "hover", "focus", or "active", like this:
+</p>
+<br>
+<table border="1" width="100%">
+    <tr>
+       <th>:active</th>
+       <td>
+        It is used to add style to an active element.
+        
+        </td>
+    </tr>
+    <tr>
+        <th>:hover</th>
+        <td>
+            It adds special effects to an element when the user moves the mouse pointer over
+             the element.
+            
+        </td>
+    </tr>
+    <tr>
+        <th>:link</th>
+        <td>
+            It adds style to the unvisited link.
+            
+        </td>
+    </tr>
+    <tr>
+        <th>:visited</th>
+        <td>
+            It adds style to a visited link.
+            
+        </td>
+    </tr>
+    <tr>
+        <th>:lang</th>
+        <td>
+            It is used to define a language to use in a specified element.
+            
+        </td>
+    </tr>
+    <tr>
+        <th>:focus</th>
+        <td>
+            It selects the element which is focused by the user currently.
+            
+        </td>
+    </tr>
+    <tr>
+        <th>:first-child</th>
+        <td>
+            It adds special effects to an element, which is the first child of another element.
+            
+        </td>
+    </tr>
+</table>
+
+<br><br>
+<a href="https://www.prepbytes.com/" target="_blank">Prepbyte</a>
+<br><br>
+<a href="https://www.prepbytes.com/" target="_blank">this is link</a>
+<br><br>
+<a href="#">link1</a>
+<br><br>
+<a href="https://www.google.com/">link</a>
+    </div>
+
+<br><br><br><br>
+
+</body>
+</html>
